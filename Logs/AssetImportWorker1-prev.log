@@ -1,0 +1,135 @@
+Unity Editor version:    2020.3.25f1 (9b9180224418)
+Branch:                  2020.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 12.0.1 (Build 21A559)
+Darwin version:          21.1.0
+Architecture:            x86_64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: NO
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+/Users/brian/Documents/Rollaball
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+58322
+Successfully changed project path to: /Users/brian/Documents/Rollaball
+/Users/brian/Documents/Rollaball
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 94.80 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.25f1 (9b9180224418)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/brian/Documents/Rollaball/Assets
+GfxDevice: creating device client; threaded=0
+2022-01-24 16:15:40.059 Unity[32326:8365838] Color LCD preferred device: Intel Iris Pro Graphics (low power)
+2022-01-24 16:15:40.062 Unity[32326:8365838] Metal devices available: 2
+2022-01-24 16:15:40.062 Unity[32326:8365838] 0: AMD Radeon R9 M370X (high power)
+2022-01-24 16:15:40.062 Unity[32326:8365838] 1: Intel Iris Pro Graphics (low power)
+2022-01-24 16:15:40.063 Unity[32326:8365838] Using device AMD Radeon R9 M370X (high power)
+Initializing Metal device caps: AMD Radeon R9 M370X
+Initialize mono
+Mono path[0] = '/Applications/Unity/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56326
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.000949 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 64.27 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.795 seconds
+Domain Reload Profiling:
+	ReloadAssembly (796ms)
+		BeginReloadAssembly (47ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (656ms)
+			LoadAssemblies (46ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (230ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (44ms)
+			SetupLoadedEditorAssemblies (275ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (64ms)
+				BeforeProcessingInitializeOnLoad (13ms)
+				ProcessInitializeOnLoadAttributes (144ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002273 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 60.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.475 seconds
+Validating Project structure ... Failed to get ipc connection from UnityShaderCompiler shader compiler! /Applications/Unity/Unity.app/Contents/Tools/UnityShaderCompiler
+Failed to get ipc connection from UnityShaderCompiler shader compiler! /Applications/Unity/Unity.app/Contents/Tools/UnityShaderCompiler
+Shader compiler: failed to launch and initialize compiler executable, even after 10 retries
+Shader compiler initialization error: Failed to get ipc connection from UnityShaderCompiler shader compiler! /Applications/Unity/Unity.app/Contents/Tools/UnityShaderCompiler
+Fatal Error! Shader compiler initialization error: Failed to get ipc connection from UnityShaderCompiler shader compiler! /Applications/Unity/Unity.app/Contents/Tools/UnityShaderCompiler
+
+Obtained 47 stack frames.
+#0  0x007ff81d97b112 in __pthread_kill
+#1  0x007ff81d8fdd10 in abort
+#2  0x0000011108e6ae in CrashDontLaunchBugReporter()
+#3  0x0000010fc18af7 in EditorMonoConsole::LogToConsoleImplementation(CppLogEntry const&)
+#4  0x0000010fc18127 in EditorMonoConsole::LogToConsoleImplementation(DebugStringToFileData const&)
+#5  0x0000010fc1989e in LogToConsoleImplementation(DebugStringToFileData const&)
+#6  0x00000110c3fdcd in DebugStringToFilePostprocessedStacktrace(DebugStringToFileData const&)
+#7  0x00000110c406b3 in DebugStringToFile(DebugStringToFileData const&)
+#8  0x000001101ce564 in GetShaderCompilerPerThreadInternal()
+#9  0x000001101cec26 in GetShaderCompilerVersion(ShaderCompilerPlatform)
+#10 0x0000010f2be940 in detail::ComputeShaderSnippetKey(ShaderSnippet const&, ShaderType, ShaderKeywordSet const&, ShaderCompilerPlatform, fixed_bitset<33, unsigned int> const&, bool, Hash128*, Hash128*, ShaderKeywordData const&)
+#11 0x0000010fbe408d in GetSubProgramForShaderSnippet(ShaderLab::Program*, Shader*, ShaderLab::Pass*, ShaderSnippet const&, ShaderType, unsigned int, ShaderKeywordSet const&, ShaderKeywordSet const&, fixed_bitset<33, unsigned int> const&, BuildTargetSelection, ShaderCompilerPlatform, ShaderSnippetResult&, ShaderRequirements, bool, bool)
+#12 0x0000010f2d89f5 in ShaderLab::Program::CompileShaderSubProgram(Shader*, ShaderLab::Pass*, ShaderSnippet const&, unsigned int, ShaderKeywordSet const&, ShaderKeywordSet&, ShaderSnippetResult&, ShaderRequirements, bool, bool)
+#13 0x0000010f2da058 in ShaderLab::Program::GetMatchingSubProgram(Shader const*, ShaderLab::Pass const*, ShaderKeywordSet const&, unsigned int, ShaderKeywordSet*, ShaderSnippetResult&, bool, bool, int, int) const
+#14 0x0000010f2e4c26 in ShaderLab::ShaderState::FindSubProgramsToUse(Shader const*, ShaderLab::Pass const*, ShaderLab::SubPrograms&, ShaderPassContext const&, ShaderKeywordSet const&, bool, int, int) const
+#15 0x00000110c6fe7f in Shader::EditorVariantWarmup()
+#16 0x0000010fbe25b9 in WarmupEditorShaders()
+#17 0x00000110c6fb1a in Shader::RecreateAllShaders(dynamic_array<Shader*, 0ul> const&)
+#18 0x00000110c6fc32 in Shader::ReloadAllShaders()
+#19 0x0000010f44d2fb in GfxDevice::CommonReloadResources(unsigned int)
+#20 0x0000010fbd69a5 in ColorSpaceLiveSwitch(bool)
+#21 0x00000110c4b898 in PlayerSettings::SyncCurrentColorSpace(bool)
+#22 0x0000010fd33c1b in Application::InitializeProject()
+#23 0x00000111099f1d in -[EditorApplication applicationDidFinishLaunching:]
+#24 0x007ff81da6de73 in __CFNOTIFICATIONCENTER_IS_CALLING_OUT_TO_AN_OBSERVER__
+#25 0x007ff81db0b349 in ___CFXRegistrationPost_block_invoke
+#26 0x007ff81db0b2c6 in _CFXRegistrationPost
+#27 0x007ff81da3f786 in _CFXNotificationPost
+#28 0x007ff81e887996 in -[NSNotificationCenter postNotificationName:object:userInfo:]
+#29 0x007ff8204aa18b in -[NSApplication _postDidFinishNotification]
+#30 0x007ff8204a9edd in -[NSApplication _sendFinishLaunchingNotification]
+#31 0x007ff8204a7ab0 in -[NSApplication(NSAppleEventHandling) _handleAEOpenEvent:]
+#32 0x007ff8204a7707 in -[NSApplication(NSAppleEventHandling) _handleCoreEvent:withReplyEvent:]
+#33 0x007ff81e8b3284 in -[NSAppleEventManager dispatchRawAppleEvent:withRawReply:handlerRefCon:]
+#34 0x007ff81e8b30f6 in _NSAppleEventManagerGenericHandler
+#35 0x007ff8240f4d28 in _AppleEventsCheckInAppWithBlock
